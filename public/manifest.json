@@ -1,5 +1,13 @@
 {
   "main.js": "render-page.js",
   "main.js.map": "render-page.js.map",
-  "static/avatar.jpg": "static/avatar-c99035c8ff4376bb578c17e597c4baed.jpg"
+  "static/Alpinist.png": "static/Alpinist-82f88b9b0460587c14373a4f1da1f4a8.png",
+  "static/Amfiteatr.png": "static/Amfiteatr-53a865bbfa918dd1a2bcf879fce18e5f.png",
+  "static/Comfhouse.png": "static/Comfhouse-603a54ab51a4cbca9567a2725a2e0369.png",
+  "static/Ecosistem.png": "static/Ecosistem-f0ac1a15702ce60e7fb3015871df212b.png",
+  "static/Lelia.png": "static/Lelia-ed4b2abe82320cf65c3c528b5f6f4d77.png",
+  "static/Ukrbustour.png": "static/Ukrbustour-c47de7e8084b47cb8d7315b5007c82bd.png",
+  "static/avatar.jpg": "static/avatar-c99035c8ff4376bb578c17e597c4baed.jpg",
+  "static/kuzmin.com.ua.png": "static/kuzmin.com.ua-adf7304143105ea8ed714e63e14bad14.png",
+  "static/steelservice.png": "static/steelservice-615b2048f8387c0304e5af7d4c82eb9a.png"
 }

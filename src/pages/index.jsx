@@ -12,7 +12,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import avatar from '../images/avatar.png';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -29,7 +29,7 @@ const DividerMiddle = styled(Divider)`
 `;
 
 const Content = styled(ParallaxLayer)`
-  ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
+  ${tw('p-6 md:p-12 lg:p-34 justify-center items-center flex z-50')};
 `;
 
 const Hero = styled.div`
@@ -41,7 +41,7 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
+  ${tw('text-4xl lg:text-5xl font-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
@@ -62,7 +62,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
+  ${tw('text-2xl lg:text-3xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
@@ -159,9 +159,11 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm John Doe.
+            Привет! <br /> Я Алексей.
           </BigTitle>
-          <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+          <Subtitle>Я занимаюсь разработкой сайтов под ключ.<br /> На основе CMS WordPress, OpenCart.<br />
+          Для этого использую: CSS3/HTML5, JavaScript/JQuery/Ajax, PHP, Sql, Bootstrap, Sass, Webpack, RegExp, Bem methodology и т.д.<br />
+          Создаю и сопровождаю сайты разной сложности.<br /> Так же использую технологии - React / Gatsby / Netlify</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -172,35 +174,71 @@ const Index = () => (
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title>Projects</Title>
-          <ProjectsWrapper>
+          <Title>Последние работы</Title>
+          <ProjectsWrapper>            
             <ProjectCard
-              title="Freiheit"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              src={require('../images/kuzmin.com.ua.png')}
+              title="Kuzmin Anton"
+              link="https://kuzmin.com.ua"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-            >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+            >          
+              <p>CMS WordPress. Адаптивная верстка.</p>
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
+              src={require('../images/Ukrbustour.png')}
+              title="Ukrbustour"
+              link="http://ukrbustour.od.ua"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+              <p>CMS WordPress. Адаптивная верстка.</p>
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+              src={require('../images/Amfiteatr.png')}
+              title="Amfiteatr"
+              link="http://amfiteatr.dp.ua/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-              Recreation of a Tomb Raider Wallpaper (Fan Art)
+              <p>CMS WordPress. Адаптивная верстка.</p>
             </ProjectCard>
             <ProjectCard
-              title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
+              src={require('../images/Alpinist.png')}
+              title="Alpinist"
+              link="https://alpinist.kiev.ua"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
-              A fantasy image manipulation relocating the habitat of wild animals.
+              <p>CMS WordPress. Адаптивная верстка.</p>
+            </ProjectCard>
+            <ProjectCard
+              src={require('../images/Comfhouse.png')}
+              title="Comfhouse"
+              link="http://comf.house"
+              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+            >          
+              <p>CMS OpenCart. Адаптивная верстка.</p>
+            </ProjectCard>
+            <ProjectCard
+              src={require('../images/Ecosistem.png')}
+              title="Ecosistem"
+              link="https://ese-dp.com.ua/"
+              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+            >
+              <p>CMS OpenCart. Адаптивная верстка.</p>
+            </ProjectCard>
+            <ProjectCard
+              src={require('../images/Lelia.png')}
+              title="Lelia"
+              link="https://vagiton.in.ua"
+              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+            >
+              <p>CMS WordPress. Адаптивная верстка.</p>
+            </ProjectCard>
+            <ProjectCard
+              src={require('../images/steelservice.png')}
+              title="Steelservicet"
+              link="https://steelservice.com.ua"
+              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+            >
+              <p>CMS WordPress. Адаптивная верстка.</p>
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
@@ -249,20 +287,27 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>About</Title>
+          <Title>Что я делаю</Title>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
+            Разработчик сайтов на основе CMS WordPress и OpenCart.<br />
+            Так же использую технологии - React / Gatsby / Netlify.
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
+          Создаю сайты разной сложности:<br />
+            1. Landing Page<br />
+            2. Корпоративные сайты<br />
+            3. Интернет - магазин<br />
+            4. Имиджевый сайт<br />
+            5. Персональные сайты<br /><br />
+          Что ждет сайт после публикации?<br />
+            После сдачи сайта предлагаю оставаться в контакте и дальше. Дополнительные услуги:<br />
+            - Техническая поддержка<br />
+            - Информационное сопровождение<br />
+            - Программирование<br />
+            - Развитие сайта<br />
           </AboutDesc>
         </Inner>
       </Content>
@@ -284,16 +329,16 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={4}>
         <Inner>
-          <Title>Get in touch</Title>
+          <Title>Свяжитесь со мной</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            по почте <a href="mailto:fedorov.kav17@gmail.com">fedorov.kav17@gmail.com</a> или по телефону:{' '}
+            <a href="">+38 096 349-64-31</a> {' '}
+            <a href=""></a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          &copy; 2018 Web-bit Все права защещены.{' '}
+          <a href="https://github.com/fed17fed/test_mysite">Github Repository</a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>

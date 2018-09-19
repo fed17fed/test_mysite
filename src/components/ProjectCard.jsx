@@ -5,12 +5,14 @@ import styled from 'react-emotion';
 
 const Wrapper = styled.a`
   width: 100%;
-  ${tw('shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 text-white')};
+  ${tw('shadow-lg relative no-underline rounded-lg px-8 py-8 text-white')};
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
     transform: translateY(-5px);
   }
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 `;
 
 const Text = styled.div`
@@ -23,8 +25,14 @@ const Title = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
-const ProjectCard = ({ title, link, children, bg }) => (
+const Image = styled.img`
+    width: 100%;
+    height: auto;
+`;
+
+const ProjectCard = ({ src, title, link, children, bg }) => (
   <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
+    <Image src={src}></Image>
     <Text>{children}</Text>
     <Title>{title}</Title>
   </Wrapper>
