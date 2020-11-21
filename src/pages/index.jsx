@@ -12,7 +12,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.png';
+import avatar from '../images/avatar.jpg';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -163,7 +163,7 @@ const Index = () => (
           </BigTitle>
           <Subtitle>Я занимаюсь разработкой сайтов под ключ.<br /> На основе CMS WordPress, OpenCart.<br />
           Для этого использую: CSS3/HTML5, JavaScript/JQuery/Ajax, PHP, Sql, Bootstrap, Sass, Webpack, RegExp, Bem methodology и т.д.<br />
-          Создаю и сопровождаю сайты разной сложности.<br /> Так же использую технологии - React / Gatsby / Netlify</Subtitle>
+          Создаю и сопровождаю сайты разной сложности.<br /> Так же использую технологии - React / Gatsby / Graphql / Wordpress / Netlify.</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -177,69 +177,37 @@ const Index = () => (
           <Title>Последние работы</Title>
           <ProjectsWrapper>            
             <ProjectCard
-              src={require('../images/kuzmin.com.ua.png')}
-              title="Kuzmin Anton"
-              link="https://kuzmin.com.ua"
+              src={require('../images/olympweb.jpg')}
+              title="Корпоративный сайт"
+              link="https://olympweb.com/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >          
-              <p>CMS WordPress. Адаптивная верстка.</p>
+              <p>React / Gatsby / Graphql / Wordpress / Netlify.</p>
             </ProjectCard>
             <ProjectCard
-              src={require('../images/Ukrbustour.png')}
-              title="Ukrbustour"
-              link="http://ukrbustour.od.ua"
+              src={require('../images/partybus.jpg')}
+              title="Partybus"
+              link="https://partybus.ee/"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-              <p>CMS WordPress. Адаптивная верстка.</p>
+              <p>html/css/js/technolife. Адаптивная верстка.</p>
             </ProjectCard>
             <ProjectCard
-              src={require('../images/Amfiteatr.png')}
-              title="Amfiteatr"
-              link="http://amfiteatr.dp.ua/"
-              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-            >
-              <p>CMS WordPress. Адаптивная верстка.</p>
-            </ProjectCard>
-            <ProjectCard
-              src={require('../images/Alpinist.png')}
+              src={require('../images/alpinist.jpg')}
               title="Alpinist"
-              link="https://alpinist.kiev.ua"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-            >
-              <p>CMS WordPress. Адаптивная верстка.</p>
-            </ProjectCard>
-            <ProjectCard
-              src={require('../images/Comfhouse.png')}
-              title="Comfhouse"
-              link="http://comf.house"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-            >          
-              <p>CMS OpenCart. Адаптивная верстка.</p>
-            </ProjectCard>
-            <ProjectCard
-              src={require('../images/Ecosistem.png')}
-              title="Ecosistem"
-              link="https://ese-dp.com.ua/"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-            >
-              <p>CMS OpenCart. Адаптивная верстка.</p>
-            </ProjectCard>
-            <ProjectCard
-              src={require('../images/Lelia.png')}
-              title="Lelia"
-              link="https://vagiton.in.ua"
+              link="https://alpinist.kiev.ua/"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
               <p>CMS WordPress. Адаптивная верстка.</p>
             </ProjectCard>
             <ProjectCard
-              src={require('../images/steelservice.png')}
-              title="Steelservicet"
-              link="https://steelservice.com.ua"
+              src={require('../images/supdnepr.jpg')}
+              title="Supdnepr"
+              link="https://supdnepr.com.ua/"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
-              <p>CMS WordPress. Адаптивная верстка.</p>
-            </ProjectCard>
+              <p>CMS OpenCart. Адаптивная верстка.</p>
+            </ProjectCard>            
           </ProjectsWrapper>
         </Inner>
       </Content>
@@ -292,7 +260,7 @@ const Index = () => (
             <Avatar src={avatar} alt="John Doe" />
             <AboutSub>
             Разработчик сайтов на основе CMS WordPress и OpenCart.<br />
-            Так же использую технологии - React / Gatsby / Netlify.
+            Так же использую технологии - React / Gatsby / Graphql / Netlify.
             </AboutSub>
           </AboutHero>
           <AboutDesc>
